@@ -1,0 +1,29 @@
+O que é a arquitetura? 
+Model (Modelo de dados) geralmente é a camada onde é construído e apresentado os modelos de dados que serão utilizados no programa. É nesta camada em que você 'modela' as características de um objeto de acordo com a tabela do banco de dados. Ela pode emitir alertas de modificações feitas pela camada de controle para a view.
+View (Visualização ou renderização) é a camada em que você tem a apresentação visual do modelo. A camada em que o usuário interage. Ela também conversa com a model capturando os modelos que serão apresentados.
+Control (Controle) é a camada que lida com as requisições que são feitas na View. É essa a camada que controla a aplicação e avisa que a model deve se atualizar. Atua como uma espécie de interface.
+Num exemplo menos abstrato, a view poderia renderizar um formulário que ao preenchido passa os dados para camada de controle que executa funções e atualiza os dados na model que renderiza em tempo real os dados atualizados na view.
+Resumindo: A view envia atualizações para o controlador, o controlador atualiza o modelo, e a view é atualizada diretamente do modelo.
+
+Vantagens
+Uma das vantagens claras da arquitetura MVC é separar o código em três níveis.
+Você tem no caso do MVC três níveis distintos onde cada um tem sua própria responsabilidade.
+Fácil manutenção de código que é fácil de estender e escalar.
+O componente do modelo MVC pode ser testado separadamente do usuário.
+O desenvolvimento dos vários componentes pode ser executado paralelamente.
+Isso ajuda a evitar a complexidade, dividindo um aplicativo em três unidades. Modelo, visualização e controlador.
+Ele usa apenas um padrão Front Controller que processa solicitações de aplicativos da Web por meio de um único controlador.
+Oferece o melhor suporte para desenvolvimento orientado a testes
+Ele funciona bem para aplicativos da Web que são suportados por grandes equipes de designers e desenvolvedores da Web.
+Todas as classes e objetos são independentes uns dos outros para que você possa testá-los separadamente.
+O padrão de design MVC permite o agrupamento lógico de ações relacionadas em um controlador.
+
+Desvantagens
+Uma lista de algumas das desvantagens:
+Difícil de ler, alterar, testar a unidade e reutilizar.
+A navegação da estrutura pode ser complexa depois de algum tempo, pois introduz novas camadas de abstração que exigem que os usuários se adaptem aos critérios de decomposição do MVC.
+Maior complexidade e ineficiência de dados.
+É necessário que vários programadores conduzam a programação paralela.
+É necessário conhecimento de várias tecnologias.
+
+Existem arquiteturas hoje em dia que combinam as melhores partes do MVC com outros modelos como o DomainDriven.

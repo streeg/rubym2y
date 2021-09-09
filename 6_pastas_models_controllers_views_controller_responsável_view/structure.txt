@@ -1,0 +1,5 @@
+Partindo de um projeto criado utilizando o comando 'rails new project' a estrutura MVC do projeto se encontram em:
+Models: project/app/models/
+View: project/app/views/ (onde deve ser criado uma pasta para cada controller que terá renderização)
+Controller: project/app/controllers/ (o nome do controller aqui será o mesmo da view concatenado com "_controller")
+A estrutra está apresentada no exercício anterior.

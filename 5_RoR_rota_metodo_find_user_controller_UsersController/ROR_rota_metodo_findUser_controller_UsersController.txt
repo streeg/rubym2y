@@ -1,0 +1,2 @@
+Resposta estruturada na pasta route_example. 
+rails s gera um html no localhost:3000 com algumas informações do que está acontecendo.
